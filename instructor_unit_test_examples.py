@@ -5,8 +5,11 @@ def red_or_blue(num):
 def average_exam_score(names_and_marks):
     total_mark = 0
     for name_and_mark in names_and_marks:
-        mark = name_and_mark['mark']
-        total_mark = total_mark + int(mark)
+        if 'mark' in name_and_mark:
+            mark = name_and_mark['mark']
+            total_mark = total_mark + int(mark)
+        else:
+            total_mark = total_mark + 5
     return total_mark / len(names_and_marks)
 
 
