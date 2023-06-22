@@ -42,7 +42,7 @@ class TestAverageExamScore(TestCase):
             {'name': 'Aisha',},
             {'name': 'Zac', 'mark': 8},
         ]
-        expected = 6.5  # (8+5+6+7) / 4 --> use 5 if mark is missing
+        expected = 7 # (8+6+7) / 3 --> ignore missing marks
 
         result = average_exam_score(my_input)
         self.assertEqual(expected, result)
