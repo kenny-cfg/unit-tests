@@ -28,7 +28,7 @@ class TestAverageExamScore(TestCase):
             {'name': 'Jane', 'mark': 7},
             {'name': 'Nitesh', 'mark': 6},
             {'name': 'Aisha', 'mark': 8},
-            {'name': 'Zac', 'mark': '8'},
+            {'name': 'Zac', 'mark': 8},
         ]
         expected = 7.25  # (8+8+6+7) / 4
 
@@ -40,7 +40,7 @@ class TestAverageExamScore(TestCase):
             {'name': 'Jane', 'mark': 7},
             {'name': 'Nitesh', 'mark': 6},
             {'name': 'Aisha',},
-            {'name': 'Zac', 'mark': '8'},
+            {'name': 'Zac', 'mark': 8},
         ]
         expected = 6.5  # (8+5+6+7) / 4 --> use 5 if mark is missing
 
