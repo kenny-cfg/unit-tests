@@ -17,9 +17,14 @@ def average_exam_score(names_and_marks):
     return total_mark / len(names_and_marks)
 
 
-def increment_line_number():
-    pass
+def increment_line_number(source):
+    return len(get_file_content(source)) + 1
 
 
 def get_file_content(filename):
+    return []
+
+
+if __name__ == '__main__':
     pass
+
