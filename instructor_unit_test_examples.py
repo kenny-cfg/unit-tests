@@ -7,7 +7,11 @@ def average_exam_score(names_and_marks):
     for name_and_mark in names_and_marks:
         if 'mark' in name_and_mark:
             mark = name_and_mark['mark']
-            total_mark = total_mark + mark
+            try:
+                total_mark = total_mark + mark
+            except:
+                raise ValueError('Mark in not an integer.')
+
         else:
             total_mark = total_mark + 5
     return total_mark / len(names_and_marks)
