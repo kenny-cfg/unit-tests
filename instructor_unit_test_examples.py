@@ -19,3 +19,7 @@ def average_exam_score(names_and_marks):
 
 def increment_line_number():
     pass
+
+
+def get_file_content(filename):
+    pass

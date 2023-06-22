@@ -60,7 +60,7 @@ class TestAverageExamScore(TestCase):
 
 class TestIncrementLineNumber(TestCase):
 
-    @mock.patch('nano.unit_test_examples.get_file_content')
+    @mock.patch('instructor_unit_test_examples.get_file_content')
     def test_mock_file_read_function(self, mock_get_file_content):
         content = [
             '1. Hello',
