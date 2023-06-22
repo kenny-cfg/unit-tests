@@ -3,7 +3,11 @@ def red_or_blue(num):
 
 
 def average_exam_score(names_and_marks):
-    return 7.25
+    total_mark = 0
+    for name_and_mark in names_and_marks:
+        mark = name_and_mark['mark']
+        total_mark = total_mark + int(mark)
+    return total_mark / len(names_and_marks)
 
 
 def increment_line_number():
